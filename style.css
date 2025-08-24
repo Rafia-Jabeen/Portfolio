@@ -1,6 +1,7 @@
 *{
     margin: 0;
     font-family: Helvetica,'Times New Roman', Times, serif, sans-serif;
+    user-select: none;
 }
 /* Hero Section */
 .hero-section{
@@ -65,47 +66,37 @@ h4{
     height: 450px;
     color: #161a1d;
     margin-top: 3vh;
-    /* border: 1px solid black; */
 }
 .projects-display-box{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     height: 400px;
-    /* border: 2px solid pink; */
+    
 }
 .bg-box{
-    border: 1px solid #161a1d;
     display: flex;
-    justify-content:center;
-    align-items: center;
-}
-.project-display-box-1{
-    height: 350px;
-    width: 34vw;
-    background-color: white;
-    margin-left: 25px;
-    margin-top: 20px;
-}
-.project-display-box-2{
-    height: 350px;
-    width: 34vw;
-    margin-left: 25px;
-    margin-top: 20px;
+    flex-wrap: wrap;       
+    justify-content: center;
+    gap: 20px;             
+    padding: 20px;         
+    box-sizing: border-box;
+    border: 1px solid #161a1d;
 }
 .project-1-image{
     background-image: url("Amazon-clone-image.jpg");
-    background-size: cover;
-    height: clamp(100px,30vh,200px);
-    width: clamp(400px,32vw,650px);
-    border: 0.1px solid black;
 }
 .project-2-image{
-    background-image: url("portfolio-image.jpg");
+    background-image: url("portfolio-image.jpg"); 
+}
+.project-1-image,
+.project-2-image {
     background-size: cover;
-    height: clamp(100px,30vh,200px);
-    width: clamp(400px,32vw,650px);
-    border: 0.1px solid black;
+    background-position: center;
+    flex: 1 1 300px;       
+    max-width: 600px;      
+    height: 200px;
+    border: 0.1px solid black; 
 }
 h5{
     font-size:  clamp(0.5rem, 3vw, 1.5rem);
@@ -130,6 +121,9 @@ h5{
     height: clamp(15px,10vh,30px);
     width: clamp(50px,60vw,100px);
 }
+#live-button:hover{
+    border: 2px solid blue;
+}
 button{
     background-color: blue;
     color: white;
@@ -137,4 +131,29 @@ button{
     border-radius: 10px;
     height: clamp(15px,10vh,30px);
     width: clamp(50px,60vw,100px);
+}
+button:hover{
+    border: 2px solid black;
+}
+/* contact-section */
+.contact-section-part{
+    margin-left: 5vw;
+    margin-top: 1vh;
+    font-size: clamp(0.5rem, 1.9vw, 1rem);
+    display: flex;
+    flex-wrap: nowrap;
+}
+.contact-type{
+    margin-left: 10px;
+}
+.i{
+    color: black;
+    height: 2vh;
+    width: 2vw;
+}
+.contact-section a{
+    margin-left: 10px;
+}
+a:hover{
+    color: blue;
 }

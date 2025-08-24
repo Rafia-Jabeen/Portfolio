@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+<header>
     <div class="hero-section">
         <div class="Introduction">
             <h2>Hi, I'm Rafia!</h2>
@@ -16,7 +18,7 @@
         </div>
         <div class="photo"></div>
     </div>
-
+</header>
 
     <div class="About-self">
         <h4>About Me</h4>
@@ -35,8 +37,8 @@
                     <h5>Amazon Clone</h5>
                     <span>A simple Frontend clone of Amazon's homepage using HTML & CSS.</span>
                     <div class="project-links">
-                        <button id="live-button">View Live</button>
-                        <button>GitHub Code</button>
+                        <button id="live-button" onclick="window.open('https://rafia-jabeen.github.io/Amazon/', '_blank');">View Live</button>
+                        <button onclick="window.open('https://github.com/Rafia-Jabeen/Amazon', '_blank');">GitHub Code</button>
                     </div>
                 </div>
             </div>
@@ -47,7 +49,7 @@
                     <h5>Portfolio Website</h5>
                     <span>This Personal Portfolio you're looking at right now!</span>
                     <div class="project-links">
-                        <button>GitHub Code</button>
+                        <button onclick="window.open('https://github.com/Rafia-Jabeen/Portfolio', '_blank');">GitHub Code</button>
                     </div>
                 </div>
             </div>
@@ -55,5 +57,34 @@
         </div>
 
     </div>
+<footer>
+    <div class="contact-section">
+        <h4>Contacts</h4>
+
+        <div class="contact-section-part">
+            <i class="fa-regular fa-envelope"></i>
+            <P class="contact-type">Email me at: </P>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rafiajabeen959@gmail.com" target="_blank"> rafiajabeen959@gmail.com</a>
+        </div>
+
+        <div class="contact-section-part">
+            <i class="fa-brands fa-linkedin"></i>
+            <p class="contact-type">LinkedIn profile: </p>
+            <a href="https://www.linkedin.com/in/rafia-jabeen-496192312" target="_blank"> Rafia Jabeen</a>
+        </div>
+
+        <div class="contact-section-part">
+            <i class="fa-brands fa-square-github"></i>
+            <p class="contact-type">GitHub profile: </p>
+            <a href="https://github.com/Rafia-Jabeen" target="_blank"> Rafia Jabeen</a>
+        </div>
+
+        <div class="contact-section-part">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="contact-type"> Karachi, Pakistan</p>
+        </div>
+    </div>
+</footer>
+<hr>
 </body>
 </html>
