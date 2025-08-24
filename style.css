@@ -3,6 +3,11 @@
     font-family: Helvetica,'Times New Roman', Times, serif, sans-serif;
     user-select: none;
 }
+@media (max-width: 768px) {
+  .project-box {
+    width: 100%;
+  }
+}
 /* Hero Section */
 .hero-section{
     width: 100%;
@@ -75,9 +80,11 @@ h4{
     
 }
 .bg-box{
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;       
-    justify-content: center;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;             
     padding: 20px;         
     box-sizing: border-box;
@@ -118,8 +125,10 @@ h5{
     color: white;
     border: none;
     border-radius: 10px;
-    height: clamp(15px,10vh,30px);
-    width: clamp(50px,60vw,100px);
+    padding: 0.5em 1.1em; /* scales with font size */
+    font-size: clamp(0.5rem, 2vw, 1rem);
+    /* height: clamp(15px,10vh,30px);
+    width: clamp(50px,60vw,100px); */
 }
 #live-button:hover{
     border: 2px solid blue;
@@ -129,8 +138,10 @@ button{
     color: white;
     border: none;
     border-radius: 10px;
-    height: clamp(15px,10vh,30px);
-    width: clamp(50px,60vw,100px);
+    padding: 0.5em 1.1em; /* scales with font size */
+    font-size: clamp(0.5rem, 2vw, 1rem);
+    /* height: clamp(15px,10vh,30px);
+    width: clamp(50px,60vw,100px); */
 }
 button:hover{
     border: 2px solid black;
